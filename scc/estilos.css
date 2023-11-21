@@ -1,0 +1,268 @@
+/*comentario*/
+/* colores 
+buscar los colores en color hunt y escribirlas*/
+/* familia tipografica */
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Libre+Baskerville&family=Pacifico&display=swap");
+/*
+font-family: 'Cabin', sans-serif;
+font-family: 'Libre Baskerville', serif; 
+font-family: 'Pacifico', cursive;*/
+/* colores 
+Verder #CBFFA9
+rosa #FF9B9B
+durazno #FFD6A5
+amarillo #FFFEC4 */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* ajuste de la fuente*/
+html {
+  font-size: 62.5;
+  font-family: "Libre Baskerville", serif;
+}
+
+/* Mobile */
+@media screen and (max-width: 500px) {
+  header {
+    background-color: aqua;
+  }
+}
+/*header*/
+header {
+  width: 100%;
+  background-color: #FFD6A5;
+  font-size: 1rem;
+  border: black solid 5px;
+}
+header p {
+  display: flex;
+  justify-content: end;
+}
+header img {
+  width: 80px;
+  padding-left: 10px;
+}
+header .headerencabezado {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+header .headerencabezado .logoheader {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-right: 20px;
+}
+header .headerencabezado .bienvenida {
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+header .headerencabezado .bienvenida .gabilang {
+  font-size: 200%;
+  font-family: "Pacifico", cursive;
+  color: palevioletred;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 60px;
+}
+
+.menu {
+  position: sticky;
+  top: 0px;
+  background-color: #FFD6A5;
+}
+.menu ul {
+  width: 100%;
+  font-size: 20px;
+  border: black solid 5px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu ul .barranavegador {
+  padding: 5px 30px 5px 30px;
+  margin: 0px;
+}
+.menu ul .botonNav:hover {
+  color: red;
+  font-size: x-large;
+}
+
+footer {
+  background-color: #FFFEC4;
+}
+footer .redestxt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+footer .redes {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+footer .redes .frases {
+  font-size: 1.3rem;
+  color: rgb(75, 138, 140);
+  font-family: "Pacifico", cursive;
+}
+footer img {
+  width: 50px;
+}
+
+main {
+  background-image: url(../medios/imagenes/fondo1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .encabezado {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  line-height: 200%;
+  font-size: 1.1rem;
+  font-family: "Cabin", sans-serif;
+  color: cadetblue;
+  padding-bottom: 40px;
+}
+main .encabezado img {
+  width: 40%;
+}
+main .encabezado img {
+  width: 50%;
+}
+main .imgyvideo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*lista de recetas*/
+.filareceta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.filareceta .imgmedia {
+  width: 250px;
+  height: 250px;
+}
+
+/*cada receta*/
+.receta {
+  font-size: 1.1rem;
+  list-style: square;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.receta h3 {
+  text-decoration: underline;
+}
+.receta h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.receta .grid-padre {
+  width: 90%;
+  display: grid;
+  grid-template-areas: "textogrid foto1grid" "foto2grid ingredientesgrid" "preparaciongrid preparaciongrid";
+  grid-template-columns: 55% 35%;
+  grid-template-rows: 250px 280px 400px;
+  justify-content: center;
+  row-gap: 20px;
+  column-gap: 10px;
+}
+.receta .grid-padre img {
+  width: 90%;
+  height: 90%;
+}
+.receta img {
+  width: 90%;
+  height: 90%;
+}
+.receta .foto1grid {
+  grid-area: foto1grid;
+  justify-self: center;
+  align-self: center;
+}
+.receta .foto2grid {
+  grid-area: foto2grid;
+  align-self: center;
+}
+.receta .textogrid {
+  grid-area: textogrid;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+.receta .ingredientesgrid {
+  grid-area: ingredientesgrid;
+  align-self: center;
+}
+.receta .preparaciongrid {
+  grid-area: preparaciongrid;
+  text-align: justify;
+  justify-self: start;
+  align-self: normal;
+}
+.receta .preparaciongrid h4 {
+  font-style: italic;
+  text-decoration: underline solid;
+  padding-bottom: 20px;
+}
+.receta .preparaciongrid ol li {
+  margin-bottom: 5px;
+}
+
+.volver {
+  display: flex;
+  justify-content: right;
+  margin-right: 100px;
+}
+
+/*productos*/
+.imgproducts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.slide {
+  margin-top: 10px;
+}
+.slide img {
+  justify-content: center;
+}
+
+/* Mobile */
+@media screen and (max-width: 500px) {
+  .barranavegador {
+    padding: 5px 5px 5px 5px;
+  }
+  .video {
+    width: 40%;
+  }
+  .bienestarimg {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

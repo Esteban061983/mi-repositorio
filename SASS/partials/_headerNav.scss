@@ -1,0 +1,90 @@
+
+
+/*header*/
+header{
+    width: 100%;
+    background-color: $durazno;
+    font-size: 1rem;
+    border: black solid 5px;
+    p   {
+        display: flex;
+        justify-content: end;
+        }
+    img {
+        width:80px;
+        padding-left: 10px;
+        }    
+    .headerencabezado{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        
+        .logoheader{
+    
+        display: flex;
+        flex-direction: column-reverse;
+        margin-right: 20px;        
+        }
+        .bienvenida{    
+            width: 88%;
+            display: flex;
+            flex-direction: column;
+            padding-top: 10px;
+            padding-left: 5px;
+            .gabilang{
+                font-size: 200%;
+                font-family:'Pacifico', cursive;
+                color: palevioletred;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                left: 60px;
+                animation-name: gabil;
+                animation-iteration-count: 1 ;
+                animation-duration: 4s;
+                animation-delay: 2s;
+                }
+                @keyframes gabil {
+                    0%{}
+                    25%{color: blueviolet;
+                        transform: scale(1.6);}
+                    50%{}
+                    75%{}
+                    100%{}
+                    
+                }
+
+                
+        
+
+        }
+    }   
+}
+
+    .menu{
+        position: sticky;
+        top: 0px;
+        background-color: #FFD6A5;
+        ul{
+            width: 100%;
+            font-size: 20px;
+            border: black solid 5px;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        .barranavegador{
+            padding: 5px 30px 5px 30px;
+            margin: 0px;
+            }
+        .botonNav:hover{
+            color: red;
+            font-size: x-large;
+            transition: 0.5s;
+
+            
+        }    
+
+        }
+
+    }

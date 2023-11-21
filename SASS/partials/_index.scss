@@ -1,0 +1,33 @@
+
+
+
+main{
+    background-image:    url(../medios/imagenes/fondo1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .encabezado{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        line-height: 200%;
+        font-size: 1.1rem;
+        font-family:'Cabin', sans-serif;
+        color: cadetblue;
+        padding-bottom: 40px;
+        img{
+            width: 40%;
+        }
+    img{
+        width: 50%;
+
+    }     
+
+    }  
+    .imgyvideo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ }
