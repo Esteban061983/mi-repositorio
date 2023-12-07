@@ -14,18 +14,36 @@
 
     }
     section{
-        form p{
-            font-size: xx-large;
+        background-image: url(/medios/imagenes/surtido-personas-seguras-sonriendo_23-2148411467.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        p{
+            padding-top: 7%;
+            font-size: larger;
             display: flex;
             justify-content: center;
         }
         
-        }
 
     }
-
-
+}
 .inputenvio{
-    border: 5px green outset;
+    display: flex;
+    justify-content: center;
+    border: 10px green outset;
+}
+
+.formu{
+    padding-top: 15px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
